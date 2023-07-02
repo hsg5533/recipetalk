@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recipe Talk</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/summernote-lite.css" />
+    <script src="/jquery_ex/jquery.js"></script>
+    <script src="./js/popper.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/summernote-lite.js"></script>
+    <script src="./js/summernote-ko-KR.js"></script>
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div id="userMenu">
+          <ul class="list_menu">
+            <li class="login"><a href="login.html">로그인</a></li>
+            <li class="signup"><a href="join.html">회원가입</a></li>
+          </ul>
+        </div>
+        <div id="logo">레시피TALK</div>
+        <div class="nav_menu">
+          <ul>
+            <li class="menu1"><a href="rank.html">베스트</a></li>
+            <li class="menu2"><a href="board.html">게시판</a></li>
+            <li class="menu3"><a href="recipe.html">레시피</a></li>
+            <li class="menu4"><a href="recipeUpload.html">레시피 등록</a></li>
+          </ul>
+          <div class="nav_search">
+            <input
+              class="search_bar"
+              type="text"
+              placeholder="검색어를 입력해주세요."
+            />
+            <input class="search_btn" type="image" src="./image/Search.png" />
+          </div>
+        </div>
+        <div class="Line-1"></div>
+      </div>
+      <div id="section">
+        <div class="row">
+          <div class="col-md-2">
+            <br />
+            <div class="list-group">
+              <a
+                href="talk.html"
+                class="list-group-item list-group-item-action active"
+                aria-current="true"
+                >추천 레시피</a
+              >
+              <a href="#" class="list-group-item list-group-item-action"
+                >맛집 공유</a
+              >
+              <a
+                href="board.html"
+                class="list-group-item list-group-item-action"
+                >자유 게시판</a
+              >
+            </div>
+          </div>
+          <div class="col-md-10">
+            <input
+              type="text"
+              name="subject"
+              class="form-control mt-4 mb-2"
+              placeholder="제목을 입력해주세요."
+              required
+            />
+            <textarea class="summernote" name="editordata"></textarea>
+            <br />
+            <button type="submit" class="btn btn-secondary mb-3">취소</button>
+            <button type="submit" class="btn btn-secondary mb-3">등록</button>
+          </div>
+        </div>
+        <script>
+          $(".summernote").summernote({
+            height: 450,
+            lang: "ko-KR",
+            placeholder: "내용을 입력해주세요.",
+          });
+        </script>
+        <script src="./js/bootstrap.js"></script>
+      </div>
+    </div>
+  </body>
+</html>

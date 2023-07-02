@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Recipe Talk</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="header">
+        <div id="userMenu">
+          <ul class="list_menu">
+            <li class="login"><a href="login.html">로그인</a></li>
+            <li class="signup"><a href="join.html">회원가입</a></li>
+          </ul>
+        </div>
+        <div id="logo">레시피TALK</div>
+        <div class="nav_menu">
+          <ul>
+            <li class="menu1"><a href="rank.html">베스트</a></li>
+            <li class="menu2"><a href="board.html">게시판</a></li>
+            <li class="menu3"><a href="recipe.html">레시피</a></li>
+            <li class="menu4"><a href="recipeUpload.html">레시피 등록</a></li>
+          </ul>
+          <div class="nav_search">
+            <input
+              class="search_bar"
+              type="text"
+              placeholder="검색어를 입력해주세요."
+            />
+            <input class="search_btn" type="image" src="./image/Search.png" />
+          </div>
+        </div>
+        <div class="Line-1"></div>
+      </div>
+      <div class="signup_page">
+        <div class="signup_h">회원가입</div>
+        <table class="signup_textline">
+          <tr>
+            <td><span class="signup_text">아이디</span></td>
+            <td>
+              <input
+                type="text"
+                class="signup_input"
+                placeholder="아이디를 입력해주세요"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><span class="signup_text">비밀번호</span></td>
+            <td>
+              <input
+                type="text"
+                class="signup_input"
+                placeholder="비밀번호를 입력해주세요"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><span class="signup_text">비밀번호 확인</span></td>
+            <td>
+              <input
+                type="text"
+                class="signup_input"
+                placeholder="비밀번호를 입력해주세요"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><span class="signup_text">이름</span></td>
+            <td>
+              <input
+                type="text"
+                class="signup_input"
+                placeholder="이름을 입력해주세요"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><span class="signup_text">이메일</span></td>
+            <td>
+              <input
+                type="text"
+                class="signup_input"
+                placeholder="이메일을 입력해주세요"
+              />
+            </td>
+          </tr>
+        </table>
+        <div class="signup_btnline">
+          <button type="button" class="signup_btn" onclick="location.href='#'">
+            가입하기
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

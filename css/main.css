@@ -173,12 +173,14 @@ ul {
 }
 
 #index-image {
-  width: 1192px;
-  height: 269px;
-  padding-top: 12px;
+  width: 100%;
+  height: auto;
   margin-top: 12px;
-  border-radius: 10px;
-  background-color: #c4c4c4;
+}
+
+#index-image img {
+  width: 100%;
+  height: auto;
 }
 
 #index-best0 {
@@ -195,23 +197,15 @@ ul {
   color: #000;
 }
 
-.main_menu {
+.main_menu ul {
   display: flex;
-}
-
-.best_image_start {
-  width: 276px;
-  height: 314px;
-  padding-top: 6px;
-  border-radius: 10px;
-  background-color: #c4c4c4;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .best_image {
   width: 276px;
   height: 314px;
-  padding-top: 6px;
-  margin-left: 30px;
   border-radius: 10px;
   background-color: #c4c4c4;
 }
